@@ -1,0 +1,7 @@
++--Contatos--+
+| Nome: ane |
+| Telefone: 3242 |
+| Celular: 45343 |
+| email: ane@mail.com |
+| Data Nascimento: 30/01/2000 |
++-------------+

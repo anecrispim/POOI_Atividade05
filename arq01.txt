@@ -1,0 +1,14 @@
+Soma elementos: 18 
+Media elementos: 3,000000 
+Maior elementos: 3 
+Menor elementos: 1 
+Qtd pares: 3 
+Qtd impares: 6 
+Soma DP: 6 
+Soma DS: 0 
+
+Matriz: 
+
+ | 1 |  | 1 |  | 1 | 
+ | 2 |  | 2 |  | 2 | 
+ | 3 |  | 3 |  | 3 | 
