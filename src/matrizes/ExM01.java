@@ -1,5 +1,7 @@
 package matrizes;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -60,7 +62,8 @@ public class ExM01 {
 		double media = soma / (tam * 2);
 
 		try {
-			FileWriter arq = new FileWriter(System.getProperty("user.dir") + "\\arq01.txt");
+			String arqNome = System.getProperty("user.dir") + "\\arq01.txt";
+			FileWriter arq = new FileWriter(arqNome);
 			
 			PrintWriter gravarArq = new PrintWriter(arq);
 	
@@ -82,6 +85,21 @@ public class ExM01 {
 			}
 			
 		    arq.close();
+		    
+		    FileReader arqLer = new FileReader(arqNome);
+		    BufferedReader lerArq = new BufferedReader(arqLer);
+
+		    String linha = lerArq.readLine(); // lê a primeira linha
+		    
+			// a variável "linha" recebe o valor "null" quando o processo
+			// de repetição atingir o final do arquivo texto
+		    while (linha != null) {
+		    	System.out.printf("%s\n", linha);
+
+		        linha = lerArq.readLine(); // lê da segunda até a última linha
+		    }
+		    
+		    lerArq.close();
 		    
 		} catch (Exception ex) {
 			System.out.println(ex);
